@@ -8,6 +8,8 @@ features <- read.table("features.txt")
 # load activity labels for use as descriptive activity names in step 3
 activity_labels <- read.table("activity_labels.txt")
 
+# Step 1
+
 # load and piece together the train data
 subject_train <- read.table("subject_train.txt")
 names(subject_train) <- ("subject")
@@ -20,6 +22,7 @@ names(y_train) <- ("activitycode")
 
 train_data <- cbind(y_train,subject_train,X_train)
 
+# load and piece together the test data
 subject_test <- read.table("subject_test.txt")
 names(subject_test) <- ("subject")
 
@@ -31,6 +34,7 @@ names(y_test) <- ("activitycode")
 
 test_data <- cbind(y_test,subject_test,X_test)
 
+# combine the train and test data
 all_data <- rbind(train_data,test_data)
 
 # step 2
