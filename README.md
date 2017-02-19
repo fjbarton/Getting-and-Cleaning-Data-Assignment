@@ -3,7 +3,7 @@ Repository for submission for week 4 assignment for Getting and Cleaning Data co
 
 R code in file run_analysis.R
 
-The following data files are required and re assumed to be in the current working directory:
+The following data files are required and are assumed to be in the current working directory:
 
 features.txt - description of measures in X_train.txt and X_test.txt data files
 activity_labels.txt - description of activity codes in y_train.txt and y_test.txt
