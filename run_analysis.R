@@ -55,5 +55,5 @@ all_data_agg <- aggregate(all_data3,by=list(all_data3$activitylabel,all_data3$su
 all_data_agg2 <- select(all_data_agg,-activitylabel,-subject) %>%
         rename(activitylabel=Group.1,subject=Group.2) %>%
         arrange(activitylabel,subject)
-# write data to file withour line numbers
+# write data to file without line numbers
 write.table(all_data_agg2,"wk4aggdata.txt",row.names=FALSE)
